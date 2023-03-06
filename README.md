@@ -11,7 +11,7 @@ Open source documentation: [Selenium](https://www.selenium.dev/),[Java](https://
 - [Install JDK](https://www.oracle.com/mx/java/technologies/downloads/)
 - [Install Git](https://git-scm.com/downloads)
 - [Install Maven](https://maven.apache.org/download.cgi)
-- [Maven Repository](https://mvnrepository.com/)
+- Resources for pom.xml dependencies [Maven Repository](https://mvnrepository.com/) .
 
 ## Set Up the Project:
 
