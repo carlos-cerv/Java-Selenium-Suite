@@ -1,1 +1,4 @@
+pages/SecureAreaPage.class
+pages/LoginPage.class
 org/example/App.class
+pages/HomePage.class
