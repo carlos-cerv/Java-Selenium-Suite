@@ -1,4 +1,2 @@
-org/example/AppTest.class
-org/example/SeleniumTest.class
 base/BaseTests.class
 login/LoginTests.class
