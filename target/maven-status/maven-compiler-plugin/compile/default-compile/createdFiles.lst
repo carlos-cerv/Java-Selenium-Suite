@@ -1,4 +1,7 @@
 pages/SecureAreaPage.class
+pages/ForgotPasswordPage.class
+pages/HomePage.class
 pages/DropdownPage.class
 pages/LoginPage.class
-pages/HomePage.class
+pages/HoversPage.class
+pages/HoversPage$FigureCaption.class
