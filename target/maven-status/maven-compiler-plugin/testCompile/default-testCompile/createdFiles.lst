@@ -1,2 +1,5 @@
+dropdown/DropdownTests.class
+hover/HoverTests.class
 base/BaseTests.class
+recovery/ForgotPassTests.class
 login/LoginTests.class

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 07 11:25:07 CST 2023</td>
+<td>Started on:</td><td>Thu Mar 09 10:54:14 CST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6350 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8482 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,10 +76,555 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='login.LoginTests.testSuccesfullLogin()'><b>testSuccesfullLogin</b><br>Test class: login.LoginTests</td>
+<td title='login.LoginTests.setUp()'><b>setUp</b><br>Test class: login.LoginTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51173/devtools/browser/7fcaa838-2692-4606-ab97-fe2429f625c0
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace62739928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace62739928'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51173/devtools/browser/7fcaa838-2692-4606-ab97-fe2429f625c0
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>1</td>
+<td>login.LoginTests@548a102f</td></tr>
+<tr>
+<td title='hover.HoverTests.setUp()'><b>setUp</b><br>Test class: hover.HoverTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51139/devtools/browser/d646cb29-2db5-405a-b904-157e41857501
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace185203393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace185203393'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51139/devtools/browser/d646cb29-2db5-405a-b904-157e41857501
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>1</td>
+<td>hover.HoverTests@3c87521</td></tr>
+<tr>
+<td title='recovery.ForgotPassTests.setUp()'><b>setUp</b><br>Test class: recovery.ForgotPassTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51156/devtools/browser/0b60c2e6-0aa1-4f89-8a4f-be2b805b8643
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace423711439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace423711439'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51156/devtools/browser/0b60c2e6-0aa1-4f89-8a4f-be2b805b8643
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>1</td>
+<td>recovery.ForgotPassTests@2aece37d</td></tr>
+<tr>
+<td title='dropdown.DropdownTests.setUp()'><b>setUp</b><br>Test class: dropdown.DropdownTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51131/devtools/browser/499749a7-7825-47ec-8f19-0d9c801ea061
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace313540687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace313540687'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51131/devtools/browser/499749a7-7825-47ec-8f19-0d9c801ea061
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>2</td>
+<td>dropdown.DropdownTests@2893de87</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='recovery.ForgotPassTests.tearDown()'><b>tearDown</b><br>Test class: recovery.ForgotPassTests</td>
 <td></td>
 <td>0</td>
-<td>login.LoginTests@1f1c7bf6</td></tr>
+<td>recovery.ForgotPassTests@2aece37d</td></tr>
+<tr>
+<td title='login.LoginTests.tearDown()'><b>tearDown</b><br>Test class: login.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>login.LoginTests@548a102f</td></tr>
+<tr>
+<td title='hover.HoverTests.tearDown()'><b>tearDown</b><br>Test class: hover.HoverTests</td>
+<td></td>
+<td>0</td>
+<td>hover.HoverTests@3c87521</td></tr>
+<tr>
+<td title='dropdown.DropdownTests.tearDown()'><b>tearDown</b><br>Test class: dropdown.DropdownTests</td>
+<td></td>
+<td>0</td>
+<td>dropdown.DropdownTests@2893de87</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='recovery.ForgotPassTests.testPasswordRecovery()'><b>testPasswordRecovery</b><br>Test class: recovery.ForgotPassTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51156/devtools/browser/0b60c2e6-0aa1-4f89-8a4f-be2b805b8643
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1884422865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1884422865'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51156/devtools/browser/0b60c2e6-0aa1-4f89-8a4f-be2b805b8643
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>recovery.ForgotPassTests@2aece37d</td></tr>
+<tr>
+<td title='login.LoginTests.testSuccesfullLogin()'><b>testSuccesfullLogin</b><br>Test class: login.LoginTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51173/devtools/browser/7fcaa838-2692-4606-ab97-fe2429f625c0
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1877240674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1877240674'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51173/devtools/browser/7fcaa838-2692-4606-ab97-fe2429f625c0
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>login.LoginTests@548a102f</td></tr>
+<tr>
+<td title='hover.HoverTests.testHoverUser1()'><b>testHoverUser1</b><br>Test class: hover.HoverTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51139/devtools/browser/d646cb29-2db5-405a-b904-157e41857501
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038988454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038988454'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51139/devtools/browser/d646cb29-2db5-405a-b904-157e41857501
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>hover.HoverTests@3c87521</td></tr>
+<tr>
+<td title='dropdown.DropdownTests.testSelectOption()'><b>testSelectOption</b><br>Test class: dropdown.DropdownTests</td>
+<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51131/devtools/browser/499749a7-7825-47ec-8f19-0d9c801ea061
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538511917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538511917'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51131/devtools/browser/499749a7-7825-47ec-8f19-0d9c801ea061
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
+	at base.BaseTests.setUp(BaseTests.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>dropdown.DropdownTests@2893de87</td></tr>
 </table><p>
 </body>
 </html>
