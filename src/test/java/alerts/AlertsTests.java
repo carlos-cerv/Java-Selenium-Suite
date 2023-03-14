@@ -13,6 +13,6 @@ public class AlertsTests extends BaseTests {
         alertsPage.triggerAlert();
         alertsPage.acceptAlert();
         alertsPage.getResult();
-        assertEquals(alertsPage.getResult(),"You successfully clicked an alert","Result Text incorrect");
+        assertEquals(alertsPage.getResult(),"You successfully clicked an alert");
     }
 }
