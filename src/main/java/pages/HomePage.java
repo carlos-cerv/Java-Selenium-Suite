@@ -42,6 +42,10 @@ public class HomePage {
         clickLink("File Upload");
         return new FileUploadPage(driver);
     }
+    public ModalPage clickModalPage(){
+        clickLink("Context Menu");
+        return new ModalPage(driver);
+    }
     public void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
