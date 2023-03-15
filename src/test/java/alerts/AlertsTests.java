@@ -24,4 +24,14 @@ public class AlertsTests extends BaseTests {
         alertsPage.alert_clickToDismiss();
         assertEquals(text,"I am a JS Confirm");
     }
+
+    @Test
+    public void testSetInputInAlert(){
+        var alertsPage = homePage.clickAlertsPage();
+        alertsPage.triggerPrompt();
+        String text = "TAU rocks!";
+        alertsPage.alert_setInput(text);
+        alertsPage.alert_clickToAccept();
+        assertEquals(alertsPage.getResult(),"You entered: " + text);
+    }
 }
