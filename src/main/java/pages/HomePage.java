@@ -49,4 +49,8 @@ public class HomePage {
     public void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
+    public WysiwygEditorPage clickWysiwygEditorPage(){
+        clickLink("WYSIWYG Editor");
+        return new WysiwygEditorPage(driver);
+    }
 }
